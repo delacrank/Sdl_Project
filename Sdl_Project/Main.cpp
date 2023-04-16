@@ -1,14 +1,12 @@
-#include "SDL.h"
+#include <SDL.h>
 #include <iostream>
 #include "Game.h"
 
-Game* g_game = 0;
+Game* g_game = NULL;
 
 int main(int argc, char* argv[]) {
 
 	g_game = new Game();
-
-	std::cout << SDL_GetBasePath() << std::endl;
 
 	g_game->init("chapter  1", 100, 100, 1000, 1000, false);
 

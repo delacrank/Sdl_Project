@@ -1,7 +1,9 @@
 #ifndef __GAME_H__
 #define __GAME_H__
 
-#include "SDL.h"
+#include <SDL.h>
+#include <SDL_image.h>
+#include "Texture_Manager.h"
 
 class Game {
 
@@ -24,6 +26,8 @@ public:
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
+
+	int m_currentFrame;
 
 	SDL_Texture* m_pTexture;
 	SDL_Rect m_sourceRectangle;
