@@ -7,6 +7,7 @@
 *.vcxproj
 *.dll
 *.filters
+*.sln
 
 # User-specific files
 *.rsuser
